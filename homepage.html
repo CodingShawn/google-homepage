@@ -1,0 +1,45 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .container {
+                display: grid;
+                width: 100%;
+                height: 100%;
+                grid-template-rows: 1fr auto auto auto 2fr;
+                grid-template-columns: auto;
+            }
+
+            .image {
+                grid-row: 2/3;
+                justify-self: center;
+                padding: 20px;
+            }
+
+            .input {
+                grid-row: 3/4;
+                justify-self: center;
+            }
+
+            .buttons {
+                grid-row: 4/5;
+                justify-self: center;
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="image">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
+            </div>
+            <div class="input">
+                <input type="text" name="search" id="search" size="55">
+            </div>
+            <div class="buttons">
+                <button type="submit">Google Search</button>
+                <button type="submit">I'm Feeling Lucky</button>
+            </div>
+        </div>
+    </body>
+</html>
