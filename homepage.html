@@ -61,10 +61,31 @@
                 outline: none !important;
             }
 
-            .buttons {
+            .buttonContainer {
                 grid-row: 4/5;
                 justify-self: center;
+                padding-top: 18px;
+            }
+
+            .buttons {
                 padding-top: 20px;
+                font-size: 14px;
+                color: #5F6368;
+                border: 1px solid #f2f2f2;
+                border-radius: 4px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                height: 36px;
+                min-width: 54px;
+                background-image: -webkit-linear-gradient(top,#ffffff,#f1f1f1);
+            }
+
+            .buttons:hover{
+                box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                color: #222;
+                border: 1px solid #c6c6c6;
+                background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1) ;
+                background-color: #f8f8f8;
             }
         </style>
     </head>
@@ -89,9 +110,9 @@
                     </svg>
                 </span>
             </div>
-            <div class="buttons">
-                <button type="submit">Google Search</button>
-                <button type="submit">I'm Feeling Lucky</button>
+            <div class="buttonContainer">
+                <button class="buttons" type="submit">Google Search</button>
+                <button class="buttons type="submit">I'm Feeling Lucky</button>
             </div>
         </div>
     </body>
