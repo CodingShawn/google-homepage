@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <style>
+
+            body {
+                margin: 0px;
+            }
             .container {
                 display: grid;
                 width: 100%;
@@ -13,10 +17,11 @@
             .navbar {
                 grid-row: 1/2;
                 display: flex;
-                height: 40px;;
+                height: 40px;
                 justify-content: flex-end;
                 align-items: center;
-
+                padding-right: 30px;
+                padding-top: 14px;
             }
 
             .navLinks {
@@ -52,7 +57,6 @@
                 text-decoration: none;
                 color: #fff;
                 background:-webkit-linear-gradient(top,#4387fd,#4683ea) ;
-                box-shadow: inset 0 2px 0 rgba(0,0,0,.15);
                 border: 1px solid #4285f4;
                 border-radius: 2px;
                 padding: 0 12px;
@@ -142,6 +146,38 @@
                 background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1) ;
                 background-color: #f8f8f8;
             }
+
+            .footbar {
+                grid-row: 6/7;
+                background-color: #f2f2f2;
+                height: 41px;
+                line-height: 40px;
+                font-size: 14px;
+                margin-left: -27px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .footbarLeft {
+                display:flex;
+                margin-left: 30px;
+            }
+
+            .footbarRight {
+                display: flex;
+                margin-right: 30px;
+            }
+
+            .footbarText {
+                text-decoration: none;
+                padding-left: 27px;
+                font-family: Arial, sans-serif;
+                color: #5f6368;
+            }
+
+            .footbarText:hover {
+                text-decoration: underline;
+            }
         </style>
     </head>
     <body>
@@ -182,6 +218,33 @@
             <div class="buttonContainer">
                 <button class="buttons" type="submit">Google Search</button>
                 <button class="buttons type="submit">I'm Feeling Lucky</button>
+            </div>
+            <div class="footbar">
+                <div class="footbarLeft">
+                    <a class="footbarText" href="">
+                        Advertising
+                    </a>
+                    <a class="footbarText" href="">
+                        Business
+                    </a>
+                    <a class="footbarText" href="">
+                        About
+                    </a>
+                    <a class="footbarText" href="">
+                        How Search Works
+                    </a>
+                </div>
+                <div class="footbarRight">
+                    <a class="footbarText" href="">
+                        Privacy
+                    </a>
+                    <a class="footbarText" href="">
+                        Terms
+                    </a>
+                    <a class="footbarText" href="">
+                        Settings
+                    </a>
+                </div>
             </div>
         </div>
     </body>
